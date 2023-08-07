@@ -1,4 +1,6 @@
-    class Singleton
+package L01.Singleton.java;
+
+class Singleton
     {
         private Singleton() { }
 
