@@ -1,7 +1,6 @@
 from HomeActionFacade import*
 single = None
 
-
 def Handle():
     global single
     try:

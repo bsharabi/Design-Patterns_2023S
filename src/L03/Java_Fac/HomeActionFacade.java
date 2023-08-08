@@ -1,23 +1,26 @@
 package L03.Java_Fac;
 
-public class HomeActionFacade extends HomeAction{
 
-    private HomeActionFacade(){}
+public class HomeActionFacade extends HomeAction {
 
-    public final static HomeActionFacade GetInstance(){return new HomeActionFacade();}
+    private HomeActionFacade() { }
 
-    public void Sleep()
-    {
+    public final static HomeActionFacade GetInstance() {
+        return new HomeActionFacade();
+    }
+
+    public void Sleep() {
         System.out.println("You have selected Sleep mode");
         System.out.println("---------------------------------------");
         System.out.println(CloseTheLight(false));
         System.out.println(TeethBrushing(true));
+
         System.out.println(CloseTheDoor(false));
         System.out.println("---------------------------------------");
 
     }
-    public void ExitTheHouse()
-    {
+
+    public void ExitTheHouse() {
         System.out.println("You have selected Exit mode from home");
         System.out.println("---------------------------------------");
         System.out.println(CloseTheDoor(false));
