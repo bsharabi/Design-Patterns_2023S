@@ -1,4 +1,4 @@
-package L01.exceptions;
+package L04.exceptions;
 
 import java.util.*;
 /**
@@ -27,10 +27,12 @@ public final class Point {
    }
 //   this is a safe constructor:
 	public Point(String str) throws PointException, NumberFormatException, NullPointerException{
-		if(str == null) throw new NullPointerException(" NullPointerException: Point is null!!!"); 
+		if(str == null) throw new NullPointerException(" NullPointerException: Point is null!!!");
 		StringTokenizer st = new StringTokenizer(str," [,]");
 		int ct = st.countTokens();
-		if(ct != 2) throw new PointException(" PointException: "+str+" Point has "+ct+" coordinates instead of 2  ");
+		if(ct != 2)
+		    throw new PointException(" PointException: "+str+" Point has "+ct+" coordinates instead of 2  ");
+//		    throw new PointException();
 		_x = Double.parseDouble(st.nextToken());
 		_y = Double.parseDouble(st.nextToken());
 	}

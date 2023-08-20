@@ -1,5 +1,4 @@
-package L01.exceptions;
-
+package L04.exceptions;
 public class TestEx {
 
 	public static void main(String[] args) {

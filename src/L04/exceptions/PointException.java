@@ -1,10 +1,22 @@
 
-package L01.exceptions;
-
+package L04.exceptions;
 public class PointException extends Exception{
 	private static final long serialVersionUID = 1L;
 
-	public PointException(String error) { 
+	public PointException() {
+		super("TWO POINT");
+	}
+
+	public PointException(String error) {
 		super(error);
+	}
+
+
+	public void printError(){
+
+	}
+	public String getError(){
+
+		return "Eroor point";
 	}
 }
