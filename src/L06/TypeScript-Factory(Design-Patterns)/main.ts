@@ -1,6 +1,6 @@
 import { UserFactory } from "./UserFactory";
 import { IUser } from "./IUser";
-class Main {
+class L06.Main {
 
 	public static main() {
 

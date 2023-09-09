@@ -31,7 +31,7 @@ public class Test {
 
     }
 
-    private static void init(int[] arr) {
+    private static  void init(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = new Random().nextInt();
         }
